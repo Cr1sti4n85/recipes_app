@@ -28,6 +28,10 @@ class RecipeView {
     this.#parentElement.insertAdjacentHTML("afterbegin", markup);
   };
 
+  //renderiza receta el inicio
+  addHandlerRender(handler) {
+    ["haschange", "load"].forEach((ev) => window.addEventListener(ev, handler));
+  }
   //private method
   #generateMarkup() {
     return `

@@ -18,7 +18,7 @@ const controlRecipes = async () => {
     //Mostrar receta en navegador. Llamado metodo render
     recipeView.render(model.state.recipe);
   } catch (error) {
-    alert(error);
+    recipeView.renderError();
   }
 };
 

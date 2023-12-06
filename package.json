@@ -9,11 +9,12 @@
   "author": "Cristian",
   "license": "ISC",
   "devDependencies": {
+    "@parcel/optimizer-terser": "^2.10.3",
     "@parcel/transformer-sass": "^2.10.3",
     "parcel": "^2.10.3",
     "sass": "^1.69.5"
   },
   "dependencies": {
-    "fractional": "^1.0.0"
+    "fracty": "^1.0.11"
   }
 }

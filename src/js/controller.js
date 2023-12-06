@@ -5,10 +5,10 @@ import resultsView from "./views/resultsView.js";
 import paginationView from "./views/paginationView.js";
 import bookmarksView from "./views/bookmarksView.js";
 
-if (module.hot) {
-  module.hot.accept();
-}
-
+// if (module.hot) {
+//   module.hot.accept();
+// }
+console.log("inicio del script");
 const controlRecipes = async () => {
   try {
     //hash de los links a las recetas

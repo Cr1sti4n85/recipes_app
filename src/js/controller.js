@@ -18,8 +18,11 @@ const controlRecipes = async () => {
 
     // update results view to mark selected search result
     resultsView.update(model.getSearchResultsPage());
+
+    //actualizar vista de bookmarks
     bookmarksView.update(model.state.bookmarks);
-    //1 Cargando receta
+
+    //Cargando receta
     await model.loadRecipe(id);
 
     //Mostrar receta en navegador. Llamado metodo render
@@ -79,7 +82,12 @@ const controlAddBookmark = function () {
   bookmarksView.render(model.state.bookmarks);
 };
 
+const controlBookMarks = () => {
+  bookmarksView.render(model.state.bookmarks);
+};
+
 const init = function () {
+  bookmarksView.addHandlerRender(controlBookMarks);
   recipeView.addHandlerRender(controlRecipes);
   recipeView.addHandlerUpdateServings(controlServings);
   recipeView.addHandlerAddBookmark(controlAddBookmark);

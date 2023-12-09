@@ -11,6 +11,9 @@ export default class View {
     if (!render) return markup;
     this._clear();
     this._parentElement.insertAdjacentHTML("afterbegin", markup);
+    if (this._data.id && window.innerWidth < 769) {
+      document.querySelector("#recipe").scrollIntoView({ behavior: "smooth" });
+    }
   }
 
   _clear() {

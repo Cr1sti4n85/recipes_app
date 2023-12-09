@@ -29,14 +29,14 @@
 
       <nav class="nav">
         <ul class="nav__list">
-          <li class="nav__item">
+          <!-- <li class="nav__item">
             <button class="nav__btn nav__btn--add-recipe">
               <svg class="nav__icon">
                 <use href="src/img/icons.svg#icon-edit"></use>
               </svg>
               <span>Add recipe</span>
             </button>
-          </li>
+          </li> -->
           <li class="nav__item">
             <button class="nav__btn nav__btn--bookmarks">
               <svg class="nav__icon">
@@ -120,7 +120,7 @@
       </p>
     </div>
 
-    <div class="recipe">
+    <div id="recipe" class="recipe">
       <div class="message">
         <div>
           <svg>
@@ -288,6 +288,13 @@
       </button>
     </form>
   </div>
+  <footer>
+    <p class="copyright__mobile">
+      <a class="github-link" target="_blank" href="https://github.com/Cr1sti4n85">Cristian Pérez</a>. This web app
+      was made for learning purposes based on the Javascript course made by Jonas Schmedtmann.
+    </p>
+  </footer>
+
   <script src="./src/js/controller.js" type="module"></script>
 </body>
 

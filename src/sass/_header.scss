@@ -142,3 +142,42 @@
     opacity: 1;
   }
 }
+
+.copyright__mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    display: block;
+  }
+  .header {
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+  }
+
+  .copyright {
+    display: none;
+  }
+
+  .nav__list {
+    justify-content: center;
+  }
+
+  .copyright__mobile {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+
+    .github-link:link,
+    .github-link:visited {
+      color: $color-grey-dark-2;
+    }
+  }
+
+  .copyright__mobile a {
+    text-decoration: none;
+  }
+}
